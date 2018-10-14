@@ -301,7 +301,7 @@ Don't forget to hold down whatever key is necessary to get to a boot menu and ch
 
 Check out `Settings > Shortcuts` for keyboard shortcuts and invisible features such as making any window more or less transparent and moving windows to certain positions on the screen. Run `Settings > Menu` to change or add to the right-click menu.
 
-This is an extremely bare-bones system. In fact aside from accessories and settings, the only real software that's installed is `xterm`, a terminal emulator. There's a chance you'll want a browser on your new system. Open a terminal: `Applications > Terminal,` and type one of the following:
+This is an extremely bare-bones system. In fact aside from accessories and settings, the only real software that's installed is `xterm`, a terminal emulator. There's a chance you'll want a browser on your new system. Open a terminal: `Applications > Terminal`, and type one of the following:
 ```
 $ sudo pacman --noconfirm -S opera
 $ sudo pacman --noconfirm -S midori
