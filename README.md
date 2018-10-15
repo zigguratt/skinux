@@ -315,5 +315,12 @@ You can use the aforementioned `Menu` and `Shortcuts` accessories to add your se
 ~/.config/openbox/
 ```
 
+If you want to add a printer to your system you'll need to do this:
+```
+$ sudo system-config-printer
+```
+
+and then add your printer. It's beyond the scope of this guide to configure any one of a vast array of existing printers. Try installing the [_Foomatic_](https://wiki.archlinux.org/index.php/CUPS#Foomatic) packages which provide a database of printer drivers.
+
 ## Conclusion
 Enjoy your new, lightweight, powerful, portable operating system! You just put a lot of work into setting it up. If you have any questions or issues I'll do my best to address them. I would love to hear of this being installed on non-Apple hardware, or of a successful reboot on a second system. I'm also very open to suggestions as to how this can be improved upon or corrected. Sadly, I probably won't entertain suggestions to change window managers or task bars. That can be decided upon after the fact by anyone who uses this guide. I would like this to be the most minimal system possible whilst still enjoying a full graphical workspace experience so any suggestions as to how to make it _more_ minimal are welcome.
