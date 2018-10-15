@@ -32,6 +32,19 @@ gst-plugins-bad
 gst-plugins-ugly
 gst-libav
 
+lxappearance
+lxhotkey
+lxinput
+lxrandr
+
+xfce4-power-manager
+xfce4-notifyd
+
+cups
+gsfonts
+ghostscript
+system-config-printer
+
 zip
 unzip
 unrar
@@ -60,11 +73,3 @@ xautolock
 xarchiver
 transset-df
 python-dbus
-
-lxappearance
-lxhotkey
-lxinput
-lxrandr
-
-xfce4-power-manager
-xfce4-notifyd
