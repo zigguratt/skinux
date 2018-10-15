@@ -43,6 +43,7 @@ xfce4-notifyd
 cups
 gsfonts
 ghostscript
+cups-pk-helper
 system-config-printer
 
 zip
