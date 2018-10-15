@@ -74,7 +74,7 @@ I won't say much about `arch-chroot` except  that it drops you into a system tha
 
 In either case, issue a `ping` command to ensure you're connected to the Internet:
 ```
-ping 8.8.8.8
+# ping 8.8.8.8
 ```
 
 If you just connected wirelessly it'll take `ping` a few seconds to show a proper response. Just wait and re-issue the command until you get a response. If you don't, then you're on your own; troubleshooting wireless connections is beyond the scope of this guide.
@@ -301,12 +301,12 @@ Don't forget to hold down whatever key is necessary to get to a boot menu and ch
 
 Check out `Settings > Shortcuts` for keyboard shortcuts and invisible features such as making any window more or less transparent and moving windows to certain positions on the screen. Run `Settings > Menu` to change or add to the right-click menu.
 
-This is an extremely bare-bones system. In fact aside from accessories and settings, the only real software that's installed is `xterm`, a terminal emulator. There's a chance you'll want a browser on your new system. Open a terminal:`Applications > Terminal,` and type one of the following:
+This is an extremely bare-bones system. In fact aside from accessories and settings, the only real software that's installed is `xterm`, a terminal emulator. There's a chance you'll want a browser on your new system. Open a terminal: `Applications > Terminal`, and type one of the following:
 ```
-sudo pacman --noconfirm -S opera
-sudo pacman --noconfirm -S midori
-sudo pacman --noconfirm -S firefox
-sudo pacman --noconfirm -S chromium
+$ sudo pacman --noconfirm -S opera
+$ sudo pacman --noconfirm -S midori
+$ sudo pacman --noconfirm -S firefox
+$ sudo pacman --noconfirm -S chromium
 ```
 
 You can use the aforementioned `Menu` and `Shortcuts` accessories to add your selected browser to the right-click menu and assign a convenient shortcut key. Use this procedure to add any further software you install. You also have the option of editing the Openbox XML configuration files directly. They're hiding here:
