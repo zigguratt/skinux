@@ -278,9 +278,10 @@ $ exit
 # pacman --noconfirm -Rcns gnome-common
 ```
 
-## Set the network connection and login managers to start on boot
-We want these two services to be up and running right from the start. Issue the following commands to have them automatically start on boot.
+## Set a few services to start on boot
+We want these services to be up and running right from the start. Issue the following commands to have them automatically start on boot.
 ```
+# systemctl enable org.cups.cupsd.service
 # systemctl enable connman
 # systemctl enable slim
 ```
