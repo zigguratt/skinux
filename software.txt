@@ -3,6 +3,7 @@ xorg-xinit
 
 gtk-engines
 gtk-engine-murrine
+papirus-icon-theme
 qt5-styleplugins
 qt5-base
 
