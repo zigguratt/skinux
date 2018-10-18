@@ -253,9 +253,10 @@ Now that we have `yaourt` available to us we can install some support software:
 * `kalu` is an update checker and notifier. It will notify you when there are updates available for your system;
 * `cmst` is a graphical interface to the network connection manager that was installed earlier. `connman`;
 * `pa-applet-git` is a tray applet that lets you monitor and change the sound volume;
-* `facetimehd-firmware` enables the webcam on most Apple laptops;
+* `bcwc-pcie-git` is a webcam driver;
 * `gtk-engine-unico` is a theme engine required by some of the software we've installed;
-* `bcwc-pcie-git` is a webcam driver.
+* `facetimehd-firmware` enables the webcam on most Apple laptops;
+* `gtk-theme-shades-of-gray` is the theme used by Openbox.
 
 You'll now have time to complete that puzzle you started earlier or finish _The Return of the King_. Don't be alarmed by the red flashing warning message that says
 ```
@@ -267,9 +268,10 @@ It says that for Every. Single. Package.
 $ yaourt --noconfirm -S kalu
 $ yaourt --noconfirm -S cmst
 $ yaourt --noconfirm -S pa-applet-git
-$ yaourt --noconfirm -S facetimehd-firmware
-$ yaourt --noconfirm -S gtk-engine-unico
 $ yaourt --noconfirm -S bcwc-pcie-git
+$ yaourt --noconfirm -S gtk-engine-unico
+$ yaourt --noconfirm -S facetimehd-firmware
+$ yaourt --noconfirm -S gtk-theme-shades-of-gray
 ```
 
 Now we can go back to `root` and remove software that was used only to support installation:
