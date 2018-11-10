@@ -1,0 +1,12 @@
+#!/bin/sh
+
+source ~/.geometry
+
+window_width=$((($useable_width / 3) - $gutter_width + 1))
+window_height=$useable_height
+horizontal_position=$left_border
+vertical_position=$top_border
+
+xdotool getactivewindow \
+  windowmove $horizontal_position $vertical_position \
+  windowsize $window_width $window_height

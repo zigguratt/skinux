@@ -1,0 +1,26 @@
+Xcursor.size: 16
+
+xterm*allowBoldFonts: false
+xterm*faceName: Inconsolata Regular
+xterm*faceSize: 12
+
+xterm*foreground: #E0E0E0
+xterm*background: #202020
+
+xterm*color0: #404040
+xterm*color1: #FF8080
+xterm*color2: #80FF80
+xterm*color3: #FFFF80
+xterm*color4: #C0C0FF
+xterm*color5: #FFC0FF
+xterm*color6: #C0FFFF
+xterm*color7: #E0E0E0
+
+xterm*color8: #000000
+xterm*color9: #C04040
+xterm*color10: #40C040
+xterm*color11: #C0C040
+xterm*color12: #8080C0
+xterm*color13: #C080C0
+xterm*color14: #80C0C0
+xterm*color15: #A0A0A0

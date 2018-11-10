@@ -1,0 +1,26 @@
+# Restore wallpaper
+nitrogen --restore &
+
+# Set up compositing
+sos-composite &
+
+# Make sure screen locks on inactivity
+sos-autolock &
+
+# Start power manager daemon
+xfce4-power-manager &
+
+# Start notification daemon
+xfce4-notifyd &
+
+# Start our panel
+tint2 &
+
+# Update notifier
+kalu &
+
+# Sound control
+pa-applet &
+
+# Start the network tray applet minimized
+cmst --minimized &

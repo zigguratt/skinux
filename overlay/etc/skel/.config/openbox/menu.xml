@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="applications" label="Applications">
+  <item label="Terminal">
+    <action name="Execute">
+      <command>xterm</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="system-settings" label="Settings">
+  <item label="Appearance">
+    <action name="Execute">
+      <command>lxappearance</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Wallpaper">
+    <action name="Execute">
+      <command>nitrogen</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Shortcuts">
+    <action name="Execute">
+      <command>lxhotkey</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Display">
+    <action name="Execute">
+      <command>lxrandr</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Sound">
+    <action name="Execute">
+      <command>pavucontrol</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Power">
+    <action name="Execute">
+      <command>xfce4-power-manager-settings</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Menu">
+    <action name="Execute">
+      <command>obmenu</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="openbox-settings" label="Openbox">
+  <item label="Configure">
+    <action name="Execute">
+      <command>obconf</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Restart">
+    <action name="Restart" />
+  </item>
+  <item label="Reload ">
+    <action name="Reconfigure" />
+  </item>
+</menu>
+
+<menu id="system-options" label="System">
+  <item label="Lock">
+    <action name="Execute">
+      <command>sos-lock</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Suspend">
+    <action name="Execute">
+      <command>sos-suspend</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <separator />
+  <item label="Power off...">
+    <action name="Execute">
+      <command>sos-poweroff</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Log out...">
+    <action name="Execute">
+      <command>sos-logout</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Reboot...">
+    <action name="Execute">
+      <command>sos-reboot</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Halt...">
+    <action name="Execute">
+      <command>sos-halt</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="root-menu" label="Openbox 3">
+  <menu id="applications" />
+  <separator />
+  <item label="Run application...">
+    <action name="Execute">
+      <command>gmrun</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <separator />
+  <menu id="system-settings" />
+  <menu id="openbox-settings" />
+  <menu id="system-options" />
+</menu>
+
+</openbox_menu>

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+top_border=10
+bottom_border=59
+left_border=10
+right_border=10
+gutter_width=10
+
+read display_width display_height <<< $(xdotool getdisplaygeometry)
+useable_width=$(($display_width - $left_border - $right_border))
+useable_height=$(($display_height - $top_border - $bottom_border))

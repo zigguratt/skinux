@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg6621" inkscape:version="0.91 r13725" sodipodi:docname="message-hover.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32"
+	 style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FDFDFD;stroke:#898989;stroke-width:1;stroke-linecap:round;}
+	.st1{fill:#898989;stroke:#6B6B6B;stroke-linecap:round;}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" id="base" inkscape:bbox-nodes="true" inkscape:bbox-paths="true" inkscape:current-layer="layer1" inkscape:cx="19.142243" inkscape:cy="21.759802" inkscape:document-units="px" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:snap-bbox="true" inkscape:snap-bbox-edge-midpoints="true" inkscape:zoom="11.313708" pagecolor="#ffffff" showgrid="false" units="px">
+	<inkscape:grid  id="grid7177" type="xygrid"></inkscape:grid>
+</sodipodi:namedview>
+<g id="layer1" transform="translate(0,-1020.3622)" inkscape:groupmode="layer" inkscape:label="Ebene 1">
+	<path id="rect4160" class="st0" d="M2,1020.9h28c0.8,0,1.5,0.7,1.5,1.5v28c0,0.8-0.7,1.5-1.5,1.5H2c-0.8,0-1.5-0.7-1.5-1.5v-28
+		C0.5,1021.5,1.2,1020.9,2,1020.9z"/>
+	<path id="rect4162-5" inkscape:connector-curvature="0" sodipodi:nodetypes="sccssss" class="st1" d="M2.8,1020.9h0.8v31H2.8
+		c-1.2,0-2.3-0.7-2.3-1.5v-27.9C0.5,1021.5,1.5,1020.9,2.8,1020.9L2.8,1020.9z"/>
+</g>
+</svg>

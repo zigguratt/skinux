@@ -1,0 +1,2 @@
+#!/bin/sh
+compton -cCfF -t-5 -l-5 -r4 -o.55 -D1

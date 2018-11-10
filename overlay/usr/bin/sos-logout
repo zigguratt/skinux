@@ -1,0 +1,8 @@
+#!/bin/sh
+gxmessage -center \
+          -ontop \
+          -title "Log out" \
+          -buttons "No:1,Yes:0" \
+          -default "Yes" \
+          "Are you sure you want to log out?" \
+&& openbox --exit

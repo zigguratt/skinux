@@ -1,0 +1,8 @@
+#!/bin/sh
+gxmessage -center \
+          -ontop \
+          -title "Halt system" \
+          -buttons "No:1,Yes:0" \
+          -default "Yes" \
+          "Are you sure you want to halt the system?" \
+&& sudo systemctl halt

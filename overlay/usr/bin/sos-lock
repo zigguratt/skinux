@@ -1,0 +1,2 @@
+#!/bin/sh
+i3lock -i /usr/share/backgrounds/background.png -t
