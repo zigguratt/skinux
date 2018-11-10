@@ -184,7 +184,7 @@ Now we have to set up networking again. The first time we set it up we were in t
 ## Set up a graphical environment
 Your new Arch system is now completely usable as it is. Everything is in place for you to be able to sit and stare at a command prompt. If you would like to do more than that, the following steps will provide a graphical environment in which you can browse your heart out.
 
-I've come up with a list of software necessary to support such an environment. It's very minimal but completely workable. I've also put together a file that will overlay our system to provide pre-sets for many things. After you've installed this software you'll have a graphical system that gives you everything you need to start installing the software that _you_ want on your system, not someone else's idea of what you should want.
+I've come up with a list of software necessary to support such an environment. It's very minimal but completely workable. I've also put together a set of files that will overlay our system to provide pre-sets for many things. After you've installed this software you'll have a graphical system that gives you everything you need to start installing the software that _you_ want on your system, not someone else's idea of what you should want.
 
 ### Clone the `skinux` repository
 We'll use `git` to retrieve this very `skinux` repository:
@@ -202,9 +202,10 @@ Now we'll use `pacman` again to install the system software. If you want to see 
 ### Overlay pre-sets onto the system
 As mentioned, I've developed pre-set configurations and initial support files that we'll overlay onto our system. These determine how the system will look and act when you log in for the first time. Everything is configurable so if you object to my choices you can change it all to be less beautiful.
 
-In order to apply the pre-sets, we need to move `overlay.tgz` to the root of the filesystem and unarchive it. This action puts all files in their right places. Make _sure_ you're at `/` and not in some other directory or you'll be left wondering why nothing works. We need `--no-same-owner` to make sure all of the extracted files are owned by the `root` user and not by whoever the fool was who put this thing together. Once we're done we can remove `overlay.tgz`. Also, we have no further need for the `skinux` repo so it can be nuked:
+In order to apply the pre-sets we need to first compress the `overlay` directory. We then uncompress it at the root directory. These actions put all files in their right places. We need to use the `--no-same-owner` option to make sure all of the extracted files are owned by the `root` user on extraction. Once we're done we can remove `overlay.tgz`. Also, we have no further need for the `skinux` repo so it can be removed:
 ```
-# mv overlay.tgz /
+# cd overlay
+# tar zcf /overlay.tgz *
 # cd /
 # tar zxf overlay.tgz --no-same-owner
 # rm overlay.tgz
@@ -232,23 +233,19 @@ One does not simply log in as root. For normal day-to-day operation you operate 
 # passwd user
 ```
 
-## Install the `yaourt` package manager
-Yaourt is a package manager that facilitates the installation of software not sanctioned by the Arch Linux maintainers. This unsanctioned software lives in the Arch User Repository (AUR). There's nothing scary about doing  this; the maintainers want to maintain a minimal system. Everything beyond that they don't guarantee. We'll need to install some of this software so we'll need `yaourt`. Throughout this guide we've been operating as `root`. Yaourt doesn't want you to install software as the root user, so we first switch identities to the user we just created. We then install the necessary software and delete the remains of the installation. You'll see a lot of output from these commands.
+## Install the `yay` package manager
+Yay is a package manager that facilitates the installation of software not sanctioned by the Arch Linux maintainers. This unsanctioned software lives in the Arch User Repository (AUR). There's nothing scary about doing  this; the maintainers want to maintain a minimal system. Everything beyond that they don't guarantee. We'll need to install some of this software so we'll need `yay`. Throughout this guide we've been operating as `root`. Yay doesn't want you to install software as the root user, so we first switch identities to the user we just created. We then install the necessary software and delete the remains of the installation.
 ```
 # su - user # remember to use the username you chose previously!
-$ git clone https://aur.archlinux.org/package-query.git
-$ cd package-query
+$ git clone https://aur.archlinux.org/yay.git
+$ cd yay
 $ makepkg --noconfirm -si
 $ cd
-$ git clone https://aur.archlinux.org/yaourt.git
-$ cd yaourt
-$ makepkg --noconfirm -si
-$ cd
-$ rm -rf package-query yaourt
+$ rm -rf yay
 ```
 
 ## Install some packages from the AUR
-Now that we have `yaourt` available to us we can install some support software:
+Now that we have `yay` available to us we can install some support software:
 
 * `kalu` is an update checker and notifier. It will notify you when there are updates available for your system;
 * `cmst` is a graphical interface to the network connection manager that was installed earlier. `connman`;
@@ -258,26 +255,21 @@ Now that we have `yaourt` available to us we can install some support software:
 * `facetimehd-firmware` enables the webcam on most Apple laptops;
 * `gtk-theme-shades-of-gray` is the theme used by Openbox.
 
-You'll now have time to complete that puzzle you started earlier or finish _The Return of the King_. Don't be alarmed by the red flashing warning message that says
+You'll now have time to complete that puzzle you started earlier or finish _The Return of the King_.
 ```
-Unsupported package: Potentially dangerous !
-```
-
-It says that for Every. Single. Package.
-```
-$ yaourt --noconfirm -S kalu
-$ yaourt --noconfirm -S cmst
-$ yaourt --noconfirm -S pa-applet-git
-$ yaourt --noconfirm -S bcwc-pcie-git
-$ yaourt --noconfirm -S gtk-engine-unico
-$ yaourt --noconfirm -S facetimehd-firmware
-$ yaourt --noconfirm -S gtk-theme-shades-of-gray
+$ yay --noconfirm -S kalu
+$ yay --noconfirm -S cmst
+$ yay --noconfirm -S pa-applet-git
+$ yay --noconfirm -S bcwc-pcie-git
+$ yay --noconfirm -S gtk-engine-unico
+$ yay --noconfirm -S facetimehd-firmware
+$ yay --noconfirm -S gtk-theme-shades-of-gray
 ```
 
 Now we can go back to `root` and remove software that was used only to support installation:
 ```
 $ exit
-# pacman --noconfirm -Rcns gnome-common
+# pacman --noconfirm -Rcns go gnome-common
 ```
 
 ## Set a few services to start on boot
