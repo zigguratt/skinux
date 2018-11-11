@@ -1,8 +1,9 @@
 #!/bin/sh
-gxmessage -center \
-          -ontop \
-          -title "Power off" \
-          -buttons "No:1,Yes:0" \
-          -default "Yes" \
-          "Are you sure you want to power off the computer?" \
+gxmessage \
+    -center \
+    -ontop \
+    -title "Power off" \
+    -buttons "No:1,Yes:0" \
+    -default "Yes" \
+    "Are you sure you want to power off the computer?" \
 && systemctl poweroff

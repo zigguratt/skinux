@@ -1,2 +1,6 @@
 #!/bin/sh
-xautolock -time 10 -locker sos-lockscreen -notify 10 -notifier "notify-send -i /usr/share/icons/gnome/48x48/status/important.png 'Inactivity timeout' 'System will lock in 10 seconds.'"
+xautolock \
+    -time 10 \
+    -locker sos-lockscreen \
+    -notify 10 \
+    -notifier "notify-send -i /usr/share/icons/gnome/48x48/status/important.png 'Inactivity timeout' 'System will lock in 10 seconds.'"

@@ -1,8 +1,9 @@
 #!/bin/sh
-gxmessage -center \
-          -ontop \
-          -title "Reboot" \
-          -buttons "No:1,Yes:0" \
-          -default "Yes" \
-          "Are you sure you want to reboot the computer?" \
+gxmessage \
+    -center \
+    -ontop \
+    -title "Reboot" \
+    -buttons "No:1,Yes:0" \
+    -default "Yes" \
+    "Are you sure you want to reboot the computer?" \
 && systemctl reboot
